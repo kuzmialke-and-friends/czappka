@@ -68,6 +68,7 @@
         "@shared/theme": "*",
         "@web/navigation": "*",
         "@web/routes": "*",
+        "@testing-library/react": "*",
         "normalize.css": "^8.0.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",

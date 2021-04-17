@@ -2,8 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Routes } from './Routes';
 
-it('renders learn react link', () => {
-    const { container } = render(<Routes />);
+describe('Routes', () => {
+    it('renders correctly', () => {
+        const { container } = render(<Routes />);
 
-    expect(container).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
+    });
 });
