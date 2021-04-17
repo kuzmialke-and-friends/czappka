@@ -38,7 +38,8 @@ module.exports = {
         'import/no-useless-path-segments': ['error', { noUselessIndex: true }],
         'import/prefer-default-export': 'off',
         'react/destructuring-assignment': 'off',
-        'react/jsx-props-no-spreading': 'warn',
+        'react/jsx-props-no-spreading': 'off',
         'react/prop-types': 'off',
+        'react/require-default-props': 'off',
     },
 };
