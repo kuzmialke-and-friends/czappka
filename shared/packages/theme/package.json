@@ -8,7 +8,7 @@
     "peerDependencies": {
         "@testing-library/react-hooks": "*",
         "react": "*",
-        "react-test-renderer": "*"
+        "@testing-library/react": "*"
     },
     "devDependencies": {}
 }

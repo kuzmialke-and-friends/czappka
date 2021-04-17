@@ -2,6 +2,8 @@
 
 exports[`theme renders correctly 1`] = `
 <div>
-  test
+  <div>
+    test
+  </div>
 </div>
 `;

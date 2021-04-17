@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import { renderHook, cleanup } from '@testing-library/react-hooks';
 import { useTheme, ThemeProvider } from './Theme';
 
@@ -7,14 +7,13 @@ afterEach(cleanup);
 
 describe('theme', () => {
     it('renders correctly', () => {
-        const tree = renderer
-            .create(
-                <ThemeProvider>
-                    <div>test</div>
-                </ThemeProvider>,
-            )
-            .toJSON();
-        expect(tree).toMatchSnapshot();
+        const { container } = render(
+            <ThemeProvider>
+                <div>test</div>
+            </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
     });
 
     it('useTheme return correct context', () => {
