@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly  1`] = `
+exports[`Navigation renders correctly 1`] = `
 <div>
   <header>
     <nav>
@@ -39,8 +39,5 @@ exports[`renders correctly  1`] = `
       </p>
     </button>
   </header>
-  <h1>
-    test
-  </h1>
 </div>
 `;

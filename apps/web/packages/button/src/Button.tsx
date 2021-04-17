@@ -1,6 +1,6 @@
 import React from 'react';
-import './Button.css';
 import { Icon, IconProps } from './Icon';
+import './Button.css';
 
 export interface ButtonProps {
     onClick?: () => void;
@@ -12,6 +12,6 @@ export interface ButtonProps {
 export const Button = ({ onClick, label, disabled = false, icon }: ButtonProps) => (
     <button type="button" onClick={onClick} aria-label={label} disabled={disabled}>
         {icon ? <Icon {...icon} /> : null}
-        label
+        <p> label</p>
     </button>
 );

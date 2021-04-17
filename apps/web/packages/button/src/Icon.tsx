@@ -8,7 +8,7 @@ export type IconType = 'regular' | 'solid';
 
 export type IconName = 'moon' | 'sun';
 
-const fontAwesomeIcon: Record<IconName, Record<IconType, IconDefinition>> = {
+const faIcon: Record<IconName, Record<IconType, IconDefinition>> = {
     moon: {
         solid: faMoon,
         regular: faMoonRegular,
@@ -24,4 +24,4 @@ export interface IconProps {
     type?: IconType;
 }
 
-export const Icon = ({ name, type = 'solid' }: IconProps) => <FontAwesomeIcon icon={fontAwesomeIcon[name][type]} />;
+export const Icon = ({ name, type = 'solid' }: IconProps) => <FontAwesomeIcon icon={faIcon[name][type]} />;
