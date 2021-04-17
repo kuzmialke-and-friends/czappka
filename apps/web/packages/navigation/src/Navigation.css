@@ -1,3 +1,17 @@
-nav {
+header {
     background-color: var(--highlight-color-2);
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 75% 25%;
+}
+
+nav {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    color: var(--color);
 }

@@ -6,12 +6,14 @@ export const Navigation = () => {
     const { toggleTheme } = useContext(ThemeSelectorContext);
 
     return (
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
+        <header>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </nav>
             <button type="button" onClick={toggleTheme}>
                 Switch theme
             </button>
-        </nav>
+        </header>
     );
 };
