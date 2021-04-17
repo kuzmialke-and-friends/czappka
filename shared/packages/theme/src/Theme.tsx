@@ -34,7 +34,6 @@ export const ThemeProvider: FunctionComponent = ({ children }) => {
     const [theme, setTheme] = useState(themes[themeName]);
 
     useEffect(() => {
-        console.log(theme);
         setCSSVariables(theme);
     }, [theme]);
 
