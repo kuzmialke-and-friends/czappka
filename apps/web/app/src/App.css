@@ -1,4 +1,33 @@
-html,
+@import 'normalize.css';
+
+html {
+    min-height: -webkit-fill-available;
+}
+
 body {
+    color: var(--color);
     background-color: var(--background-color);
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        height: 100%;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
+}
+
+p,
+figure {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#application {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
