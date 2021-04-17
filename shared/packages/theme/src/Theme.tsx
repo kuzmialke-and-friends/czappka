@@ -1,4 +1,4 @@
-import React, { createContext, FunctionComponent, useEffect, useState } from 'react';
+import React, { createContext, FunctionComponent, useContext, useEffect, useState } from 'react';
 
 const themes = {
     dark: {
@@ -18,10 +18,12 @@ const themes = {
 type Theme = keyof typeof themes;
 type Variables = typeof themes.dark & typeof themes.light;
 
-export const ThemeSelectorContext = createContext({
+const ThemeSelectorContext = createContext({
     themeName: 'dark',
     toggleTheme: () => {},
 });
+
+export const useTheme = () => useContext(ThemeSelectorContext);
 
 const setCSSVariables = (theme: Variables) => {
     Object.entries(theme).forEach(([variableName, variable]) => {

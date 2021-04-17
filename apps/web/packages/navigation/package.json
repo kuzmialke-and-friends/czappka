@@ -9,6 +9,7 @@
     "peerDependencies": {
         "@web/button": "*",
         "@shared/theme": "*",
+        "@testing-library/react": "*",
         "react": "*",
         "react-dom": "*",
         "react-router-dom": "*",

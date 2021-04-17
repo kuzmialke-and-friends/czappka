@@ -3,7 +3,7 @@ import './Button.css';
 import { Icon, IconProps } from './Icon';
 
 export interface ButtonProps {
-    onClick: () => void;
+    onClick?: () => void;
     label: string;
     disabled?: boolean;
     icon?: IconProps;

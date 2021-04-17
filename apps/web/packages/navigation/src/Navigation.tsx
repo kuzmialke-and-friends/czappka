@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { ThemeSelectorContext } from '@shared/theme';
+import React from 'react';
+import { useTheme } from '@shared/theme';
 import { Button, IconProps } from '@web/button';
 import './Navigation.css';
 
@@ -9,7 +9,7 @@ const themeToIcon: Record<string, IconProps['name']> = {
 };
 
 export const Navigation = () => {
-    const { toggleTheme, themeName } = useContext(ThemeSelectorContext);
+    const { toggleTheme, themeName } = useTheme();
 
     const iconProps: IconProps = {
         name: themeToIcon[themeName],

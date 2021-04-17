@@ -6,9 +6,9 @@
         "test": "jest"
     },
     "peerDependencies": {
+        "@testing-library/react": "*",
         "@testing-library/react-hooks": "*",
-        "react": "*",
-        "@testing-library/react": "*"
+        "react": "*"
     },
     "devDependencies": {}
 }
