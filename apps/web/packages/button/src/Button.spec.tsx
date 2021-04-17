@@ -9,7 +9,13 @@ describe('Button', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('renders with on click function', () => {
+    it('renders button with icon', () => {
+        const { container } = render(<Button label="I have an icon!" />);
+
+        expect(container).toMatchSnapshot();
+    });
+
+    it('renders clickable button', () => {
         const onClick = jest.fn();
         const label = 'Click me!';
 
@@ -18,5 +24,16 @@ describe('Button', () => {
         fireEvent.click(screen.getByLabelText(label));
 
         expect(onClick).toHaveBeenCalled();
+    });
+
+    it('renders with disabled button', () => {
+        const onClick = jest.fn();
+        const label = "Can't click me!";
+
+        render(<Button label={label} onClick={onClick} disabled />);
+
+        fireEvent.click(screen.getByLabelText(label));
+
+        expect(onClick).not.toHaveBeenCalled();
     });
 });
