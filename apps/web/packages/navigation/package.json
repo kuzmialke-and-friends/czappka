@@ -1,0 +1,16 @@
+{
+    "name": "@web/navigation",
+    "version": "0.0.0",
+    "private": true,
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "jest"
+    },
+    "peerDependencies": {
+        "@shared/theme": "*",
+        "react": "*",
+        "react-dom": "*",
+        "react-router-dom": "*",
+        "react-test-renderer": "*"
+    }
+}
