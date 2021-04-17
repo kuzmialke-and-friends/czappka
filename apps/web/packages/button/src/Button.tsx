@@ -12,5 +12,6 @@ export interface ButtonProps {
 export const Button = ({ onClick, label, disabled = false, icon }: ButtonProps) => (
     <button type="button" onClick={onClick} aria-label={label} disabled={disabled}>
         {icon ? <Icon {...icon} /> : null}
+        label
     </button>
 );

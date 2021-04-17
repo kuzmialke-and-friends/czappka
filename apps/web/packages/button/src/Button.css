@@ -7,6 +7,10 @@ button {
     outline: none;
 }
 
+text {
+    display: none;
+}
+
 svg {
     color: var(--color);
 }
