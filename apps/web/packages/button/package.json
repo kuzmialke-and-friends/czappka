@@ -1,0 +1,24 @@
+{
+    "name": "@web/button",
+    "version": "0.0.0",
+    "private": true,
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "jest"
+    },
+    "peerDependencies": {
+        "react": "*",
+        "react-dom": "*",
+        "react-router-dom": "*",
+        "react-test-renderer": "*"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.35",
+        "@fortawesome/free-regular-svg-icons": "^5.15.3",
+        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@fortawesome/react-fontawesome": "^0.1.14"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-common-types": "^0.2.35"
+    }
+}
