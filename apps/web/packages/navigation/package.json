@@ -12,7 +12,6 @@
         "@testing-library/react": "*",
         "react": "*",
         "react-dom": "*",
-        "react-router-dom": "*",
-        "react-test-renderer": "*"
+        "react-router-dom": "*"
     }
 }
